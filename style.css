@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 236, 233);
+}
+.cont{
+    display: grid;
+    height: 900px;
+    width: 600px;
+    background-color: rgb(146, 226, 109);
+    overflow: hidden;
+    grid-template-areas: 
+    "m"
+    "e"
+    "e"
+    "e"
+    "e"
+    "e"
+    "e"
+    "e"
+    "e"
+    "e"
+    "s"
+    "s"
+    ;
+}
+.grid{
+    padding: 5px;
+    text-align: center;
+}
+.title{
+    grid-area: m;
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+}
+.search{
+    grid-area: s;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.text{
+
+    grid-area: e;
+    text-align: left;
+    padding-left: 35px;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 25px;
+    
+}
+input[type=text]{
+    height: 45px;
+    width: 75%;
+    background-color: bisque;
+    border: none;
+}
+button{
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:  monospace;
+    height: 45px;
+    width: 45px;
+    border: none;
+    background-color: bisque;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+  }
+
+#scroll{
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+element::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
